@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+body{
+   background: black;
+   transition: 2s;
+}
+
+.nav-title{
+  color: white;
+  position: absolute;
+  font-size: 3vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: nav1 1s forwards;
+  transition: .3s;
+}
+.nb{
+  animation: nav2 2s forwards;
+}
+.nav-title:hover{
+  border-bottom: 2px solid green;
+}
+@keyframes nav1 {
+  to{top: 50%;left: 2.5vw;transform: translate(0, -50%);color:black; transform: rotate(-90deg); font-weight: 700;text-decoration: none;}
+}
+@keyframes nav2 {
+  from{background: white; height: 0; width: 10vw;}
+  to{background: white; height: 100vh; width: 10vw;}
+}
+
+.l{
+  width: 100vw;
+  height: 100vh;
+  background: #040404;
+}
+.nb-menu{
+  position: absolute;
+  width: 45vw;
+  height: 100vh;
+  background: red;
+  left: -50vw;
+  transition: 2s;
+  z-index: -1000;
+}
+
+.nb-menu li{
+  color: black;
+  font-size:3vh;
+  list-style: none;
+  text-align: center;
+  padding: 3vh;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+.nb-menu a{
+  text-decoration: none;
+}
+.nb-menu li:hover{
+  border-left: 6px solid white;
+  margin-right: -4vw;
+  font-size: 4vh;
+}
+
+.nb-menu ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.greeting{
+  position: absolute;
+  height: 100vh;
+  width: 45vw;
+  right: -50vw;
+  background: white;
+  transition: 2s;
+}
+
+.greeting p{
+  font-size: 5vh;
+}
+.greeting cite {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2vh;
+}
+blockquote{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+}
+.go-back{
+  position: absolute;
+  background: black;
+  height: 100vh;
+  width: 10vw;
+  z-index: 10;
+  margin-left: 45vw;
+  bottom: 100vh;
+  transition: 2s;
+}
+.back{
+  color: white;
+  font-size: 5vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .2s;
+}
+.back:hover{
+  color: red;
+  box-shadow: 0 0 50px rgba(255,0,0,0.5);
+  border-radius: 50%;
+}
+.logo{
+  position: absolute;
+  left: 50vw;
+  bottom: 84vh;
+  animation: logo 1s forwards;
+  color: white;
+  font-size: 10vh;
+  font-family: 'Great Vibes';
+  transition: 5s;
+}
+
+@keyframes logo {
+  to{bottom: 80vh;}
+}
